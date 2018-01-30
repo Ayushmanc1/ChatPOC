@@ -1,0 +1,26 @@
+Create RR:Create
+Create an RR:Create
+Get RR:Get
+Get allrr:GetAllrr
+Get all rr:GetAllrr
+get an rr:Get
+create rr for skillset java:create
+hello :unknow
+hi:unknow
+hi:unknow
+hi:unknow
+hello are you there :unknow
+help:unknow
+Help:unknow
+good mooring :unknow
+Hi mooring:unknow
+Open:unknow
+hihello:unknow
+Java:unknow
+java:unknow
+leave module:unknow
+approved:unknow
+approved:unknow
+:unknow
+:unknow
+:unknow

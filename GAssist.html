@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSBC GAssist - GMIS Conversational Bot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: url(assets/images/background1/100302337-hsbc_hq_getty_1910x1000.jpg) no-repeat cent center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+    
+
+        .chat-window {
+            width: 350px;
+            height: 430px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .b-agent-demo .b-agent-demo_powered_by {
+            display: none !important;
+        }
+
+        .b-agent-demo_powered_by {
+            visibility: hidden;
+        }
+
+            .b-agent-demo_powered_by a {
+                visibility: hidden;
+            }
+
+        .b-agent-demo.b-agent-demo_powered_by {
+            visibility: hidden !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!--div class="row">
+            <div class="col-md-6 xol-sm-6">
+                <div class="kestra-logo">
+                    kestra Logo
+                </div>
+            </div>
+        </div-->
+        <div class="chat-window">
+            <iframe width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/6b0d717a-9546-4f77-ae54-c811395af6f4"></iframe>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.onvoiceschanged = function () {
+                }
+
+                $('#mic').click(function () {
+                    var text = $('#query').val();
+                    var msg = new SpeechSynthesisUtterance();
+                    msg.text = text;
+                    speechSynthesis.speak(msg);
+                })
+            }
+        });
+
+    </script>
+
+</body>
+</html>
